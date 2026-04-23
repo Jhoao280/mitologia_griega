@@ -11,6 +11,7 @@ const navLinks = [
   { href: "/personajes", label: "Personajes" },
   { href: "/mitologia", label: "Mitología" },
   { href: "/reflexiones", label: "Reflexiones" },
+  { href: "/iliada", label: "Ilíada" },
 ]
 
 export function Navbar() {
@@ -126,3 +127,4 @@ export function Navbar() {
     </>
   )
 }
+
