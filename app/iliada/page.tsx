@@ -1,6 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image"
+import Link from "next/link"
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
+import { Section, SectionHeader, FeatureCard } from "@/components/section"
+import { ScrollReveal, ScaleIn } from "@/components/scroll-reveal"
+import { BookOpen, Users, Lightbulb, ArrowRight, Sparkles, Globe, Scale } from "lucide-react"
 
 export default function IliadaSection() {
   return (
