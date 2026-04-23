@@ -221,8 +221,8 @@ export default function MitologiaPage() {
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.pexels.com/photos/33456287/pexels-photo-33456287.jpeg?_gl=1*cejz99*_ga*MjMwMTg4MzkzLjE3NzAwNDgxNzc.*_ga_8JE65Q40S6*czE3NzY1MDMxOTYkbzQkZzEkdDE3NzY1MDY0MjIkajQyJGwwJGgw"
-                  alt="Greek mythology art"
+                  src="/linea.png"
+                  alt="Linea de tiempo"
                   fill
                   className="object-cover"
                 />
