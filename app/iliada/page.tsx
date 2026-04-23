@@ -11,6 +11,8 @@ import { BookOpen, Users, Lightbulb, ArrowRight, Sparkles, Globe, Scale } from "
 
 export default function IliadaSection() {
   return (
+    <main className="min-h-screen">
+      <Navbar />
     <section className="w-full py-20 px-6 md:px-20 bg-gradient-to-b from-white to-gray-100 text-gray-800">
       <div className="max-w-6xl mx-auto">
 
