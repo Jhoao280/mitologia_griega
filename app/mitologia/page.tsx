@@ -216,10 +216,10 @@ export default function MitologiaPage() {
 
       {/* Characteristics */}
 <Section>
-  <div className="flex flex-col gap-16 items-center">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
     
     <ScrollReveal direction="left">
-      <div className="relative w-full max-w-xl h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+      <div className="relative w-full h-[500px] rounded-3xl overflow-hidden shadow-2xl">
         <Image
           src="/linea.png"
           alt="linea de tiempo"
@@ -230,7 +230,7 @@ export default function MitologiaPage() {
     </ScrollReveal>
     
     <ScrollReveal direction="right">
-      <div className="w-full max-w-2xl">
+      <div>
         <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
           Elementos Distintivos
         </p>
