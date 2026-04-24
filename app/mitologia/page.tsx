@@ -222,7 +222,7 @@ export default function MitologiaPage() {
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="/linea.png"
-                  alt="Linea de tiempo"
+                  alt="linea de tiempo"
                   fill
                   className="object-cover"
                 />
