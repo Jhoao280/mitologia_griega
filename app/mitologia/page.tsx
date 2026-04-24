@@ -216,7 +216,7 @@ export default function MitologiaPage() {
 
       {/* Characteristics */}
       <Section>
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-1 gap-16 items-center">
           <ScrollReveal direction="left">
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
