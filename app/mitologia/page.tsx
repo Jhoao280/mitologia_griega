@@ -215,52 +215,53 @@ export default function MitologiaPage() {
       </Section>
 
       {/* Characteristics */}
-      <Section>
-        <div className="grid lg:grid-cols-1 gap-16 items-center">
-          <ScrollReveal direction="left">
-            <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/linea.png"
-                  alt="linea de tiempo"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-          </ScrollReveal>
-          
-          <ScrollReveal direction="right">
-            <div>
-              <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
-                Elementos Distintivos
-              </p>
-              <h2 className="text-4xl font-bold text-foreground mb-8">
-                Características de la Mitología
-              </h2>
-              
-              <div className="space-y-4">
-                {characteristics.map((char, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border/50"
-                  >
-                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <ChevronRight className="w-5 h-5 text-primary" />
-                    </div>
-                    <p className="text-muted-foreground leading-relaxed">{char}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-          </ScrollReveal>
+<Section>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    
+    <ScrollReveal direction="left">
+      <div className="relative">
+        <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+          <Image
+            src="/linea.png"
+            alt="linea de tiempo"
+            fill
+            className="object-cover"
+          />
         </div>
-      </Section>
+      </div>
+    </ScrollReveal>
+    
+    <ScrollReveal direction="right">
+      <div>
+        <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
+          Elementos Distintivos
+        </p>
+        <h2 className="text-4xl font-bold text-foreground mb-8">
+          Características de la Mitología
+        </h2>
+        
+        <div className="space-y-4">
+          {characteristics.map((char, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="flex items-start gap-4 p-4 bg-card rounded-xl border border-border/50"
+            >
+              <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                <ChevronRight className="w-5 h-5 text-primary" />
+              </div>
+              <p className="text-muted-foreground leading-relaxed">{char}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </ScrollReveal>
 
+  </div>
+</Section>
       <Footer />
     </main>
   )
