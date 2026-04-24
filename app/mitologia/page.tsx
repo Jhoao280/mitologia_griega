@@ -218,7 +218,7 @@ export default function MitologiaPage() {
       <Section>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <ScrollReveal direction="center">
-            <div className="relative w-full h-auto">
+            <div className="relative">
               <div className="relative w-full h-auto overflow-hidden shadow-2xl">
                 <Image
                   src="/linea.png"
