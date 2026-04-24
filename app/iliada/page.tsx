@@ -13,84 +13,108 @@ export default function IliadaSection() {
   return (
     <main className="min-h-screen">
       <Navbar />
-    <section className="w-full py-20 px-6 md:px-20 bg-gradient-to-b from-white to-gray-100 text-gray-800">
-      <div className="max-w-6xl mx-auto">
 
-        {/* Título */}
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold text-center mb-6"
-        >
-          La Ilíada
-        </motion.h1>
+      <section className="w-full py-20 px-6 md:px-20 bg-gradient-to-b from-white to-gray-100 text-gray-800">
+        <div className="max-w-6xl mx-auto">
 
-        {/* Introducción */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="text-lg text-center max-w-3xl mx-auto mb-14"
-        >
-          La Ilíada es una epopeya atribuida a Homero, ambientada en la Guerra de Troya. 
-          La obra se centra en la cólera de Aquiles y sus consecuencias en el conflicto.
-        </motion.p>
-
-        {/* Grid de contenido */}
-        <div className="grid md:grid-cols-2 gap-8">
-
-          <Card title="Conflicto Principal">
-            La historia gira en torno a la disputa entre Aquiles y Agamenón. 
-            La retirada de Aquiles debilita a los griegos y permite el avance de los troyanos liderados por Héctor.
-          </Card>
-
-          <Card title="Intervención de los Dioses">
-            Los dioses del Olimpo participan activamente en la guerra, influyendo en el destino de los mortales 
-            y tomando partido en ambos bandos.
-          </Card>
-
-          <Card title="Desarrollo de Aquiles">
-            Aquiles evoluciona desde una ira destructiva hacia una visión más humana del sufrimiento, 
-            especialmente tras la muerte de Patroclo.
-          </Card>
-
-          <Card title="Importancia">
-            Esta obra es fundamental en la literatura universal por su riqueza narrativa, su profundidad 
-            temática y su influencia en la cultura occidental.
-          </Card>
-
-        </div>
-
-        {/* Temas */}
-        <div className="mt-20">
-          <h2 className="text-2xl font-semibold text-center mb-10">
-            Temas Principales
-          </h2>
-
-          <div className="flex flex-wrap justify-center gap-4">
-            {[
-              "Honor",
-              "Gloria",
-              "Ira",
-              "Venganza",
-              "Muerte",
-              "Fragilidad humana",
-              "Consecuencias de la guerra",
-            ].map((tema, i) => (
-              <motion.div
-                key={i}
-                whileHover={{ scale: 1.08 }}
-                className="px-5 py-2 bg-white rounded-full shadow-md border"
-              >
-                {tema}
-              </motion.div>
-            ))}
+          {/* 🔥 IMAGEN PRINCIPAL */}
+          <div className="mb-10 flex justify-center">
+            <Image
+              src="https://cdn.zendalibros.com/wp-content/uploads/2025/11/la-iliada-version-critica.webp"
+              alt="La Ilíada - Guerra de Troya"
+              width={800}
+              height={400}
+              className="rounded-2xl shadow-lg object-cover"
+            />
           </div>
-        </div>
 
-      </div>
-    </section>
+          {/* Título */}
+          <motion.h1
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl font-bold text-center mb-6"
+          >
+            La Ilíada
+          </motion.h1>
+
+          {/* Introducción */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="text-lg text-center max-w-3xl mx-auto mb-14"
+          >
+            La Ilíada es una epopeya atribuida a Homero, ambientada en la Guerra de Troya. 
+            La obra se centra en la cólera de Aquiles y sus consecuencias en el conflicto.
+          </motion.p>
+
+          {/* 🔥 SEGUNDA IMAGEN */}
+          <div className="mb-14 flex justify-center">
+            <Image
+              src="/aquiles.jpg" // otra imagen en public/
+              alt="Aquiles en batalla"
+              width={600}
+              height={350}
+              className="rounded-xl shadow-md object-cover"
+            />
+          </div>
+
+          {/* Grid de contenido */}
+          <div className="grid md:grid-cols-2 gap-8">
+
+            <Card title="Conflicto Principal">
+              La historia gira en torno a la disputa entre Aquiles y Agamenón. 
+              La retirada de Aquiles debilita a los griegos y permite el avance de los troyanos liderados por Héctor.
+            </Card>
+
+            <Card title="Intervención de los Dioses">
+              Los dioses del Olimpo participan activamente en la guerra, influyendo en el destino de los mortales 
+              y tomando partido en ambos bandos.
+            </Card>
+
+            <Card title="Desarrollo de Aquiles">
+              Aquiles evoluciona desde una ira destructiva hacia una visión más humana del sufrimiento, 
+              especialmente tras la muerte de Patroclo.
+            </Card>
+
+            <Card title="Importancia">
+              Esta obra es fundamental en la literatura universal por su riqueza narrativa, su profundidad 
+              temática y su influencia en la cultura occidental.
+            </Card>
+
+          </div>
+
+          {/* Temas */}
+          <div className="mt-20">
+            <h2 className="text-2xl font-semibold text-center mb-10">
+              Temas Principales
+            </h2>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              {[
+                "Honor",
+                "Gloria",
+                "Ira",
+                "Venganza",
+                "Muerte",
+                "Fragilidad humana",
+                "Consecuencias de la guerra",
+              ].map((tema, i) => (
+                <motion.div
+                  key={i}
+                  whileHover={{ scale: 1.08 }}
+                  className="px-5 py-2 bg-white rounded-full shadow-md border"
+                >
+                  {tema}
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
   );
 }
 
