@@ -219,7 +219,7 @@ export default function MitologiaPage() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <ScrollReveal direction="left">
             <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative w-full h-auto overflow-hidden shadow-2xl">
                 <Image
                   src="/linea.png"
                   alt="Linea de tiempo"
