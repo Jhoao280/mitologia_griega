@@ -52,7 +52,7 @@ export default function IliadaSection() {
           {/* 🔥 SEGUNDA IMAGEN */}
           <div className="mb-14 flex justify-center">
             <Image
-              src="/aquiles.jpg" // otra imagen en public/
+              src="https://muyinteresante.okdiario.com/wp-content/uploads/sites/5/2022/10/14/634964985050b.jpeg"
               alt="Aquiles en batalla"
               width={600}
               height={350}
